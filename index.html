@@ -37,7 +37,9 @@
   @media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} }
 
   /* ---------- HERO ---------- */
-  .hero{background:
+  .lang{position:absolute;top:18px;right:22px;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;color:#aeb7c5;text-decoration:none;border:1px solid rgba(255,255,255,.25);padding:7px 14px;border-radius:99px;z-index:5}
+  .lang:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+  .hero{position:relative;background:
       radial-gradient(1200px 500px at 50% 118%, rgba(194,145,60,.28), transparent 60%),
       radial-gradient(900px 420px at 82% -10%, rgba(143,176,204,.18), transparent 60%),
       var(--night);
@@ -172,6 +174,7 @@
 
 <!-- ============ HERO ============ -->
 <header class="hero">
+  <a class="lang" href="https://jaybee17.github.io/bernie-bedard-tribute/fr/">Fran&ccedil;ais</a>
   <div class="wrap">
     <img class="hero-logo" src="img/bb-loft-logo.png" alt="BB Loft">
     <div class="eyebrow">Hammond, Ontario &middot; A tribute from his family</div>

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Soixante-douze ans dans le ciel — Un hommage à Bernie Bédard">
+<meta property="og:description" content="72 ans de passion, de souvenirs, d'amitiés et de dévouement. Un hommage de sa famille.">
+<meta property="og:image" content="https://jaybee17.github.io/bernie-bedard-tribute/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>72 ans dans le ciel</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --night:#141d2e;
+    --night-soft:#1e2a40;
+    --dawn:#f6f2e9;
+    --dawn-deep:#ede6d6;
+    --ink:#26303f;
+    --ink-soft:#5a6172;
+    --gold:#c2913c;
+    --gold-soft:#d9b878;
+    --sky:#8fb0cc;
+    --serif:'Source Serif 4', Georgia, serif;
+    --display:'Fraunces', Georgia, serif;
+    --mono:'IBM Plex Mono', Consolas, monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--dawn);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .narrow{max-width:680px;margin:0 auto}
+  h2{font-family:var(--display);font-weight:500;font-size:clamp(30px,4.5vw,44px);line-height:1.12;text-wrap:balance;margin:14px 0 22px}
+  p+p{margin-top:1em}
+  @media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} }
+
+  .lang{position:absolute;top:18px;right:22px;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;color:#aeb7c5;text-decoration:none;border:1px solid rgba(255,255,255,.25);padding:7px 14px;border-radius:99px;z-index:5}
+  .lang:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;background:
+      radial-gradient(1200px 500px at 50% 118%, rgba(194,145,60,.28), transparent 60%),
+      radial-gradient(900px 420px at 82% -10%, rgba(143,176,204,.18), transparent 60%),
+      var(--night);
+    color:#eef0ef;padding:64px 24px 0;overflow:hidden}
+  .hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .hero-logo{height:56px;filter:invert(1);opacity:.92;margin-bottom:38px}
+  .hero .eyebrow{color:var(--gold-soft)}
+  .hero h1{font-family:var(--display);font-weight:340;font-size:clamp(52px,10vw,116px);line-height:1.0;letter-spacing:-.01em;text-wrap:balance;margin:20px 0 22px}
+  .hero h1 em{font-style:italic;font-weight:420;color:var(--gold-soft)}
+  .hero-sub{max-width:620px;font-size:clamp(18px,2.2vw,22px);line-height:1.55;color:#c6ccd6}
+  .hero-years{font-family:var(--mono);font-size:13px;letter-spacing:.35em;color:#8a94a6;margin-top:26px}
+  .hero-photo{margin-top:52px;width:min(880px,100%);border-radius:10px 10px 0 0;box-shadow:0 -18px 60px rgba(0,0,0,.45)}
+  .hero-photo img{border-radius:10px 10px 0 0}
+
+  .caption{font-family:var(--serif);font-style:italic;font-size:17px;color:#3f4757;padding:12px 8px 0;text-align:center}
+
+  /* ---------- LETTRE ---------- */
+  .letter{padding:84px 24px 76px;text-align:center}
+  .letter .narrow p{font-family:var(--display);font-weight:380;font-size:clamp(22px,3vw,30px);line-height:1.45;color:var(--ink)}
+  .letter .narrow p+p{margin-top:1.1em}
+  .letter .sig{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--ink-soft);margin-top:2.2em}
+  .dove{width:44px;margin:0 auto 26px;opacity:.85}
+
+  /* ---------- HISTOIRE ---------- */
+  .story{background:var(--dawn-deep);padding:88px 24px}
+  .story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+  @media(max-width:820px){.story-grid{grid-template-columns:1fr}}
+  .story p{color:#3a4250}
+  blockquote{border-left:3px solid var(--gold);padding:6px 0 6px 22px;margin:1.6em 0;font-style:italic;color:var(--ink);font-size:20px;line-height:1.55}
+  blockquote cite{display:block;font-style:normal;font-family:var(--mono);font-size:12px;letter-spacing:.15em;color:var(--ink-soft);margin-top:10px}
+  .photo-card{border-radius:8px;overflow:hidden;box-shadow:0 14px 40px rgba(20,29,46,.18)}
+  .stack{display:flex;flex-direction:column;gap:28px;position:sticky;top:32px}
+
+  /* ---------- LIGNE DU TEMPS ---------- */
+  .timeline{padding:92px 24px;background:var(--night);color:#dfe3ea}
+  .timeline h2{color:#f2ede2}
+  .timeline-head{text-align:center;max-width:640px;margin:0 auto 60px}
+  .timeline-head p{color:#9aa4b4}
+  .tl{max-width:760px;margin:0 auto;position:relative;padding-left:34px}
+  .tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold) 0%, rgba(194,145,60,.25) 100%)}
+  .tl-item{position:relative;padding:0 0 40px 26px}
+  .tl-item::before{content:"";position:absolute;left:-33px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--night);border:2.5px solid var(--gold)}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-year{font-family:var(--mono);font-size:14px;color:var(--gold-soft);letter-spacing:.18em}
+  .tl-item h3{font-family:var(--display);font-weight:480;font-size:23px;color:#f2ede2;margin:6px 0 8px}
+  .tl-item p{font-size:17.5px;line-height:1.6;color:#aeb7c5}
+
+  /* ---------- CHIFFRES ---------- */
+  .numbers{background:var(--dawn);padding:80px 24px}
+  .num-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(38,48,63,.14);border:1px solid rgba(38,48,63,.14);border-radius:10px;overflow:hidden}
+  @media(max-width:720px){.num-grid{grid-template-columns:repeat(2,1fr)}}
+  .num{background:var(--dawn);padding:34px 26px}
+  .num b{display:block;font-family:var(--display);font-weight:380;font-size:clamp(36px,4.5vw,52px);color:var(--night);font-variant-numeric:tabular-nums}
+  .num b i{font-style:normal;color:var(--gold)}
+  .num span{display:block;margin-top:8px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);line-height:1.6}
+
+  /* ---------- FAMILLE ---------- */
+  .family{background:var(--dawn-deep);padding:88px 24px}
+  .family-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+  @media(max-width:820px){.family-grid{grid-template-columns:1fr}}
+  .family-grid.family-solo{grid-template-columns:1fr;max-width:720px;margin:0 auto}
+  .teams{margin-top:26px;display:flex;flex-direction:column;gap:10px}
+  .team{display:flex;align-items:baseline;gap:14px;font-size:17px}
+  .team code{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--dawn);background:var(--night);padding:3px 10px;border-radius:99px;white-space:nowrap}
+  .team span{color:#3a4250}
+
+  /* ---------- TÉMOIGNAGES ---------- */
+  .voices{padding:92px 24px;background:var(--dawn)}
+  .voices-head{text-align:center;max-width:620px;margin:0 auto 54px}
+  .voice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  @media(max-width:760px){.voice-grid{grid-template-columns:1fr}}
+  .voice{background:#fff;border:1px solid rgba(38,48,63,.1);border-radius:8px;padding:30px 30px 26px;display:flex;flex-direction:column;gap:16px}
+  .voice p{font-size:17.5px;line-height:1.6;color:#3a4250}
+  .voice .who{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:auto}
+
+  /* ---------- GALERIE ---------- */
+  .gallery{background:var(--night-soft);padding:88px 24px}
+  .gallery h2{color:#f2ede2}
+  .gallery .eyebrow{display:block;text-align:center}
+  .gallery h2{text-align:center;margin-bottom:48px}
+  .g-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:760px){.g-grid{grid-template-columns:repeat(2,1fr)}}
+  .g-grid figure{border-radius:6px;overflow:hidden;position:relative}
+  .g-grid img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform .5s ease}
+  .g-grid figure:hover img{transform:scale(1.035)}
+  .g-wide{grid-column:span 2}
+  .g-contain img{object-fit:contain;background:var(--night)}
+  .g-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(10,15,25,.88));color:#f3f0e7;font-family:var(--serif);font-size:15px;font-style:italic}
+
+  /* ---------- FINALE ---------- */
+  .closing{background:
+      radial-gradient(1000px 460px at 50% -20%, rgba(194,145,60,.22), transparent 60%),
+      var(--night);
+    color:#eef0ef;padding:110px 24px 70px;text-align:center}
+  .closing .dove{filter:invert(1);opacity:.9}
+  .closing h2{font-weight:340;font-size:clamp(34px,5.5vw,58px);color:#f2ede2;max-width:760px;margin:14px auto 26px}
+  .closing h2 em{color:var(--gold-soft)}
+  .closing p.fr{font-style:italic;color:#aeb7c5;font-size:20px;max-width:560px;margin:0 auto}
+  .closing .heart{color:var(--gold-soft)}
+  .closing-names{font-family:var(--mono);font-size:14px;letter-spacing:.22em;color:var(--gold-soft);margin-top:30px;text-transform:uppercase}
+  .closing-logo{height:44px;filter:invert(1);opacity:.85;margin:64px auto 14px}
+  .foot{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:#79839a;text-transform:uppercase}
+
+  /* ---------- LISIBILITÉ MOBILE ---------- */
+  @media(max-width:700px){
+    body{font-size:21px;line-height:1.6}
+    .eyebrow{font-size:13.5px}
+    .hero-sub{font-size:21px}
+    .hero-years{font-size:15px}
+    .letter .narrow p{font-size:25px}
+    .letter .sig{font-size:21px}
+    blockquote{font-size:21px}
+    .tl-year{font-size:16px}
+    .tl-item h3{font-size:26px}
+    .tl-item p{font-size:20px}
+    .timeline-head p{font-size:20px}
+    .num span{font-size:14px}
+    .team{font-size:19px;flex-wrap:wrap}
+    .team code{font-size:14px}
+    .voice p{font-size:20px}
+    .voice .who{font-size:13.5px}
+    .caption{font-size:19px}
+    .g-grid figcaption{font-size:16.5px}
+    .closing p.fr{font-size:21px}
+    .closing-names{font-size:15px}
+    .foot{font-size:13px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HÉROS ============ -->
+<header class="hero">
+  <a class="lang" href="https://jaybee17.github.io/bernie-bedard-tribute/">English</a>
+  <div class="wrap">
+    <img class="hero-logo" src="../img/bb-loft-logo.png" alt="BB Loft">
+    <div class="eyebrow">Hammond, Ontario &middot; Un hommage de sa famille</div>
+    <h1>Soixante-douze ans<br><em>dans le ciel</em></h1>
+    <p class="hero-sub">Bernie B&eacute;dard a pass&eacute; sa vie &agrave; &eacute;lever des champions et &agrave; les laisser s&rsquo;envoler &mdash; confiant, chaque fois, qu&rsquo;ils retrouveraient le chemin de la maison. Ils l&rsquo;ont toujours retrouv&eacute;. Comme tous ceux qui l&rsquo;ont connu.</p>
+    <div class="hero-years">1953 &mdash; 2026</div>
+    <div class="hero-photo"><img src="../img/hero-bernie-wing.jpg" alt="Bernie Bédard ouvrant l'aile d'un de ses pigeons voyageurs à son pigeonnier de Hammond, Ontario"></div>
+  </div>
+</header>
+<div class="caption wrap">Bernie au pigeonnier, lisant une aile comme d&rsquo;autres lisent un livre.</div>
+
+<!-- ============ LETTRE DE LA FAMILLE ============ -->
+<section class="letter">
+  <div class="narrow">
+    <svg class="dove" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 40c10 2 20-1 27-8 5-5 8-12 8-19 3 4 4 9 3 14 5-2 9-6 11-11 2 7 0 15-5 21-7 8-18 12-29 10l-9 7-2-9-4-5z" fill="#c2913c"/></svg>
+    <p>Cette semaine, mon p&egrave;re a d&eacute;cid&eacute; de fermer un chapitre incroyable apr&egrave;s 72&nbsp;ans d&rsquo;&eacute;levage de pigeons.</p>
+    <p>Ce qui a commenc&eacute; comme une passion est devenu une immense partie de sa vie. Au fil des ann&eacute;es, il a partag&eacute; ses connaissances, son temps et son amour des pigeons avec tant de gens &mdash; toujours pr&ecirc;t &agrave; aider.</p>
+    <p>72 ans de passion, de souvenirs, d&rsquo;amiti&eacute;s et de d&eacute;vouement.</p>
+    <p class="sig">&mdash; Avec tout notre amour, Sue, Jos&eacute;e, Chantal, Francine, Marc et Max</p>
+  </div>
+</section>
+
+<!-- ============ HISTOIRE ============ -->
+<section class="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div>
+        <span class="eyebrow">Le petit gars de Hammond</span>
+        <h2>Tout a commenc&eacute; sous un pont, avec un pigeon de grange et un r&ecirc;ve.</h2>
+        <p>Bernie est n&eacute; en 1943 &agrave; Hammond, en Ontario, dans l&rsquo;une des familles fondatrices canadiennes-fran&ccedil;aises de la r&eacute;gion. Son p&egrave;re gardait des pigeons de toutes les sortes &mdash; culbutants, queues de paon, Tipplers &mdash; et la fascination est pass&eacute;e directement de p&egrave;re en fils. Enfant, Bernie attrapait des pigeons sauvages dans les granges et sous les ponts, en esp&eacute;rant en trouver un qui portait une bague.</p>
+        <blockquote>&laquo;&nbsp;En attraper un avec une bague, c&rsquo;&eacute;tait comme un miracle. J&rsquo;avais un pigeonnier sp&eacute;cial pour ceux qui avaient des bagues, et j&rsquo;essayais de les faire reproduire.&nbsp;&raquo;<cite>&mdash; Bernie</cite></blockquote>
+        <p>Quand son p&egrave;re partait &agrave; la chasse au chevreuil &agrave; Chalk River &mdash; &agrave; 125 milles, bien avant les cellulaires &mdash; il apportait des pigeons, attachait un petit papier &agrave; leur patte et envoyait les nouvelles &agrave; la maison sur des ailes. Chaque soir, le jeune Bernie v&eacute;rifiait le pigeonnier pour un message. Son meilleur oiseau portait le num&eacute;ro 1338. Il ne l&rsquo;a jamais oubli&eacute;.</p>
+        <p>En 1966, il a mari&eacute; sa douce moiti&eacute;, Suzanne &mdash; et l&rsquo;a c&eacute;l&eacute;br&eacute; de la seule fa&ccedil;on qui avait du sens&nbsp;: il a b&acirc;ti un pigeonnier. L&rsquo;ann&eacute;e suivante, celle du centenaire du Canada, il a vol&eacute; sa premi&egrave;re course avec le Centennial Homing Pigeon Club. Il a travaill&eacute; 28 ans comme messager &agrave; la Chambre des communes, livrant les messages des d&eacute;put&eacute;s le jour &mdash; pendant qu&rsquo;&agrave; la maison, il entra&icirc;nait les meilleurs messagers qui soient.</p>
+      </div>
+      <div class="stack">
+        <div>
+          <div class="photo-card"><img src="../img/bernie-suzanne.jpg" alt="Bernie et Suzanne Bédard dans les couleurs d'automne"></div>
+          <div class="caption">Bernie &amp; Suzanne &mdash; mari&eacute;s en 1966. Il a b&acirc;ti un pigeonnier pour c&eacute;l&eacute;brer.</div>
+        </div>
+        <div>
+          <div class="photo-card"><img src="../img/loft-birds-roof.jpg" alt="Le pigeonnier de Hammond avec les pigeons sur le toit"></div>
+          <div class="caption">Le pigeonnier de Hammond, les oiseaux rentr&eacute;s sains et saufs sur le toit.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGNE DU TEMPS ============ -->
+<section class="timeline">
+  <div class="timeline-head">
+    <span class="eyebrow">La longue course vers la maison</span>
+    <h2>Soixante-douze ans, un pigeonnier &agrave; la fois</h2>
+    <p>Comme ses oiseaux, Bernie n&rsquo;&eacute;tait jamais le plus rapide au d&eacute;part &mdash; il &eacute;tait celui qui, toujours, revenait plus fort.</p>
+  </div>
+  <div class="tl">
+    <div class="tl-item"><div class="tl-year">1943</div><h3>Naissance &agrave; Hammond, Ontario</h3><p>Dans une famille fondatrice de Clarence-Rockland &mdash; et dans une maison o&ugrave; son p&egrave;re parlait de pigeons &agrave; tous les repas.</p></div>
+    <div class="tl-item"><div class="tl-year">~1953</div><h3>Les premiers oiseaux</h3><p>Un gar&ccedil;on de dix ans commence &agrave; attraper des pigeons sauvages dans les granges et sous les ponts, faisant reproduire tout oiseau assez chanceux pour porter une bague.</p></div>
+    <div class="tl-item"><div class="tl-year">1966</div><h3>Il marie Suzanne &middot; b&acirc;tit son premier pigeonnier</h3><p>Deux partenariats pour la vie commencent la m&ecirc;me ann&eacute;e.</p></div>
+    <div class="tl-item"><div class="tl-year">1967</div><h3>Premi&egrave;re saison de courses</h3><p>Il joint le Centennial Homing Pigeon Club l&rsquo;ann&eacute;e du centenaire du Canada. Il ramasse les chapeaux de tout le monde &agrave; la fin &mdash; mais il ne l&acirc;che jamais.</p></div>
+    <div class="tl-item"><div class="tl-year">1974</div><h3>Premi&egrave;re victoire en One Loft Race</h3><p>&Agrave; Bowmanville, contre 900 pigeons, son magnifique m&acirc;le grizzle arrive &agrave; &eacute;galit&eacute; en premi&egrave;re place &mdash; 2&nbsp;000&nbsp;$ avec une horloge manuelle et un contremarque.</p></div>
+    <div class="tl-item"><div class="tl-year">2010</div><h3>Le Fameux Couple</h3><p>Sur les conseils de Rick Broere, il accouple une femelle Grootjans de 260&nbsp;$, CU&nbsp;10/2339, avec le m&acirc;le noir CU&nbsp;11/260. Ce seul accouplement devient la fondation de tout ce qui suit.</p></div>
+    <div class="tl-item"><div class="tl-year">2015</div><h3>1er Ma&icirc;tre &Eacute;leveur</h3><p>Les enfants du Fameux Couple commencent &agrave; montrer ce qu&rsquo;ils ont dans le ventre. Bernie est officiellement sur la carte.</p></div>
+    <div class="tl-item"><div class="tl-year">2017</div><h3>Gagnant de la Triple Couronne</h3><p>Son #118 Blue Bar Splash remporte la Triple Couronne &agrave; l&rsquo;Empire Classic. L&rsquo;ann&eacute;e suivante&nbsp;: Ma&icirc;tre &Eacute;leveur 1er, 2e <em>et</em> 3e.</p></div>
+    <div class="tl-item"><div class="tl-year">2019</div><h3>L&rsquo;ann&eacute;e de r&ecirc;ve</h3><p>L&rsquo;&eacute;quipe &laquo;&nbsp;Weekend at Bernie&rsquo;s&nbsp;&raquo; gagne le 340 du Salem Special &mdash; premier prix de 19&nbsp;000&nbsp;$. Le Super #303 gagne trois sp&eacute;ciales pour &laquo;&nbsp;Les Deux Suzannes&nbsp;&raquo;. Meilleure moyenne courte, longue et g&eacute;n&eacute;rale. Plus de 38&nbsp;750&nbsp;$ en une seule saison.</p></div>
+    <div class="tl-item"><div class="tl-year">2023</div><h3>Encore dans l&rsquo;argent &agrave; 80 ans</h3><p>Des top-3 aux One Loft Races de Niagara Peninsula et d&rsquo;Upper Canada, avec trois g&eacute;n&eacute;rations de familles qui font maintenant voler des oiseaux BB Loft.</p></div>
+    <div class="tl-item"><div class="tl-year">2026</div><h3>Le chapitre se ferme</h3><p>Apr&egrave;s 72 ans, Bernie ouvre les portes du pigeonnier une derni&egrave;re fois. Les oiseaux continuent de voler &mdash; dans des pigeonniers partout au Canada, portant ses lign&eacute;es et ses le&ccedil;ons avec eux.</p></div>
+  </div>
+</section>
+
+<!-- ============ CHIFFRES ============ -->
+<section class="numbers">
+  <div class="wrap">
+    <div class="num-grid">
+      <div class="num"><b>72</b><span>ans &agrave; &eacute;lever des pigeons</span></div>
+      <div class="num"><b>83</b><span>ans jeune &mdash; et il siffle encore &agrave; ses oiseaux</span></div>
+      <div class="num"><b>38&nbsp;750&nbsp;$<i>+</i></b><span>gagn&eacute;s dans sa saison de r&ecirc;ve, 2019</span></div>
+      <div class="num"><b>35</b><span>champions tri&eacute;s sur le volet dans le pigeonnier &mdash; la qualit&eacute; avant la quantit&eacute;, toujours</span></div>
+      <div class="num"><b>28</b><span>ans messager &agrave; la Chambre des communes</span></div>
+      <div class="num"><b>#1338</b><span>son meilleur oiseau d&rsquo;enfance &mdash; un num&eacute;ro jamais oubli&eacute;</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAMILLE ============ -->
+<section class="family">
+  <div class="wrap">
+    <div class="family-grid family-solo">
+      <div>
+        <span class="eyebrow">Une affaire de famille</span>
+        <h2>Chaque &eacute;quipe sur la feuille de course, c&rsquo;&eacute;tait la famille.</h2>
+        <p>Sue accompagnait Bernie &agrave; la one loft race chaque ann&eacute;e &mdash; le seul voyage qu&rsquo;ils faisaient toujours ensemble. Elle aidait &agrave; choisir les jeunes oiseaux, suivait chaque encan et &eacute;tait, dans ses mots &agrave; lui, son roc. Ses filles Jos&eacute;e et Chantal, son petit-fils Max, Marc et Francine &mdash; toute la famille regardait chaque course en ligne, suivait les r&eacute;sultats quand il &eacute;tait parti et s&rsquo;occupait du pigeonnier &agrave; la maison. Victoire ou d&eacute;faite, Bernie n&rsquo;a jamais vol&eacute; seul.</p>
+        <div class="teams">
+          <div class="team"><code>WEEKEND AT BERNIE&rsquo;S</code><span>avec Bill Voulgaris &amp; Ken VanWalleghem &mdash; champions du Salem Special</span></div>
+          <div class="team"><code>LES DEUX SUZANNES</code><span>Suzanne &amp; Suzanne McIntire &mdash; dix ans d&rsquo;&eacute;quipe, &laquo;&nbsp;toujours dans l&rsquo;argent&nbsp;&raquo;</span></div>
+          <div class="team"><code>LUCKY 7</code><span>l&rsquo;&eacute;quipe familiale, inscrite chaque ann&eacute;e depuis le tout d&eacute;but</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TÉMOIGNAGES ============ -->
+<section class="voices">
+  <div class="voices-head">
+    <span class="eyebrow">Ce qu&rsquo;ils disent de lui</span>
+    <h2>&laquo;&nbsp;Les bons gars finissent premiers.&nbsp;&raquo;</h2>
+  </div>
+  <div class="voice-grid">
+    <div class="voice">
+      <p>&laquo;&nbsp;Un homme plus fin que Bernie et sa famille, vous n&rsquo;en avez jamais rencontr&eacute;. En un claquement de doigts, ils sont tous l&agrave; pour vous donner un coup de main&hellip; un &eacute;levage intelligent et des soins formidables ont aid&eacute; Bernie &agrave; cr&eacute;er une famille d&rsquo;oiseaux qui ont la volont&eacute; et la capacit&eacute; de r&eacute;ussir.&nbsp;&raquo;</p>
+      <div class="who">Rick Broere &mdash; The Salem Special, son &laquo;&nbsp;superh&eacute;ros&nbsp;&raquo;</div>
+    </div>
+    <div class="voice">
+      <p>&laquo;&nbsp;Je ne connais personne qui a perform&eacute; au sommet avec autant de constance, ann&eacute;e apr&egrave;s ann&eacute;e. Bernie est une personne exceptionnelle &mdash; tr&egrave;s connaissant, honn&ecirc;te et digne de confiance.&nbsp;&raquo;</p>
+      <div class="who">Bill Voulgaris &amp; Ken VanWalleghem &mdash; V&amp;V Loft, Winnipeg</div>
+    </div>
+    <div class="voice">
+      <p>&laquo;&nbsp;Je fais voler des oiseaux depuis plus de quatre-vingts ans&hellip; Bernie Bedard se classe parmi les tout meilleurs. Il a &eacute;t&eacute; fid&egrave;le &agrave; sa parole en tout point.&nbsp;&raquo;</p>
+      <div class="who">Tom &amp; Annemarie Spring</div>
+    </div>
+    <div class="voice">
+      <p>&laquo;&nbsp;Bernie a donn&eacute; un pigeon en cadeau &agrave; chacun de mes quatre enfants et &agrave; ma femme. Un vrai colombophile et un ami. Sa passion inspire des amateurs partout dans le monde.&nbsp;&raquo;</p>
+      <div class="who">Enrico &amp; sa famille</div>
+    </div>
+    <div class="voice">
+      <p>&laquo;&nbsp;Gr&acirc;ce &agrave; ton expertise d&eacute;vou&eacute;e, toute notre famille &eacute;l&egrave;ve maintenant des pigeons voyageurs &mdash; une vraie aventure partag&eacute;e, rendue possible par ta g&eacute;n&eacute;rosit&eacute; et ta passion contagieuse.&nbsp;&raquo;</p>
+      <div class="who">Daniel Plasse &mdash; trois g&eacute;n&eacute;rations qui font voler des oiseaux BB Loft</div>
+    </div>
+    <div class="voice">
+      <p>&laquo;&nbsp;Merci Bernie pour ta g&eacute;n&eacute;rosit&eacute;, ton aide et ton support envers nous et nos familles.&nbsp;&raquo;</p>
+      <div class="who">Scared North Lofts &mdash; dont les plus jeunes membres ont 2 et 10 ans</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="gallery">
+  <div class="wrap">
+    <span class="eyebrow">Le pigeonnier de Hammond</span>
+    <h2>Une vie en images</h2>
+    <div class="g-grid">
+      <figure class="g-wide"><img src="../img/bernie-medals.jpg" alt="Bernie avec ses certificats de l'Empire Classic et sa médaille de 2018"><figcaption>2018 &mdash; Ma&icirc;tre &Eacute;leveur 1er, 2e &amp; 3e, certificats en main</figcaption></figure>
+      <figure class="g-contain"><img src="../img/famous-couple.jpg" alt="Le Fameux Couple — CU 10/2339 et CU 11/260"><figcaption>Le Fameux Couple &mdash; l&agrave; o&ugrave; tout a commenc&eacute;</figcaption></figure>
+      <figure><img src="../img/pigeons-loft.jpg" alt="Des pigeons Grootjans dans le pigeonnier"><figcaption>La famille Grootjans, chez elle au pigeonnier</figcaption></figure>
+      <figure><img src="../img/pigeon-closeup.jpg" alt="Le pigeonnier blanc de Hammond"><figcaption>Le pigeonnier, Hammond, Ontario</figcaption></figure>
+      <figure><img src="../img/wing-detail.jpg" alt="Un pigeon tenu doucement dans les mains de Bernie"><figcaption>&laquo;&nbsp;Je les traite comme des membres de ma famille&nbsp;&raquo;</figcaption></figure>
+      <figure><img src="../img/loft-white.jpg" alt="Bernie déployant une aile"><figcaption>La lecture de l&rsquo;aile</figcaption></figure>
+      <figure><img src="../img/loft-interior.jpg" alt="Des pigeons près de la fenêtre du pigeonnier"><figcaption>Lumi&egrave;re du matin au pigeonnier</figcaption></figure>
+      <figure><img src="../img/bernie-at-loft.jpg" alt="Bernie en kangourou vert près du pigeonnier"><figcaption>La tourn&eacute;e &mdash; pigeonnier et pigeonnier d&rsquo;&eacute;levage</figcaption></figure>
+      <figure><img src="../img/bernie-giving-birds.jpg" alt="Les oiseaux de Bernie remis à un jeune couple à leur nouveau pigeonnier"><figcaption>Des champions transmis au prochain pigeonnier</figcaption></figure>
+      <figure><img src="../img/next-generation.jpg" alt="Collage de la plus jeune génération de coureurs de pigeons que Bernie a aidés à débuter"><figcaption>La prochaine g&eacute;n&eacute;ration qu&rsquo;il a aid&eacute;e &agrave; prendre son envol</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section class="closing">
+  <svg class="dove" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 40c10 2 20-1 27-8 5-5 8-12 8-19 3 4 4 9 3 14 5-2 9-6 11-11 2 7 0 15-5 21-7 8-18 12-29 10l-9 7-2-9-4-5z" fill="#3d4a63"/></svg>
+  <div class="eyebrow">De nous tous</div>
+  <h2>Papa, tu peux &ecirc;tre tellement fier de l&rsquo;h&eacute;ritage que tu as cr&eacute;&eacute;. <em>Quel incroyable voyage ce fut.</em> <span class="heart">&#10084;</span></h2>
+  <p class="fr">72 ans de passion, de souvenirs, d&rsquo;amiti&eacute;s et de d&eacute;vouement.</p>
+  <p class="closing-names">Sue &middot; Jos&eacute;e &middot; Chantal &middot; Francine &middot; Marc &middot; Max</p>
+  <img class="closing-logo" src="../img/bb-loft-logo.png" alt="BB Loft">
+  <div class="foot">Bernie B&eacute;dard &middot; BB Loft &middot; Hammond, Ontario &middot; 1953&ndash;2026</div>
+</section>
+</body>
+</html>
