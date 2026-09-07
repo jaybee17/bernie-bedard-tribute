@@ -89,6 +89,7 @@
   .family{background:var(--dawn-deep);padding:88px 24px}
   .family-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
   @media(max-width:820px){.family-grid{grid-template-columns:1fr}}
+  .family-grid.family-solo{grid-template-columns:1fr;max-width:720px;margin:0 auto}
   .teams{margin-top:26px;display:flex;flex-direction:column;gap:10px}
   .team{display:flex;align-items:baseline;gap:14px;font-size:17px}
   .team code{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--dawn);background:var(--night);padding:3px 10px;border-radius:99px;white-space:nowrap}
@@ -220,11 +221,7 @@
 <!-- ============ FAMILY ============ -->
 <section class="family">
   <div class="wrap">
-    <div class="family-grid">
-      <div>
-        <div class="photo-card"><img src="img/family-firepit.jpg" alt="The Bédard family gathered around the firepit"></div>
-        <div class="caption">The whole team: Bernie, Suzanne, Chantal, Jos&eacute;e, Maxime, Marc &amp; Francine.</div>
-      </div>
+    <div class="family-grid family-solo">
       <div>
         <span class="eyebrow">A family affair</span>
         <h2>Every team on the race sheet was family.</h2>
